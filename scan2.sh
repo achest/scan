@@ -42,6 +42,10 @@ scanimage --device ${DEVICE} ${SCANIMAGE_OPTS} --resolution ${RESOLUTION} --sour
 ls -1 out*.tif > /dev/null
 
 
+
+
 tiffcp -c lzw out*.tif scan.tiff
+
+cd -
 
 tiff2pdf -z ${TMPDIR}/scan.tiff > ${OUTFILE}
