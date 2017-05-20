@@ -25,13 +25,12 @@ SCANIMAGE_OPTS=' -l 0 -t 0 -x 210 -y 290'
 
 
 TMPDIR=$(mktemp -d /tmp/scan2pdf.XXXXXXX)
+echo create TEMPDIR ${TMPDIR}
 
 DATE=`date +%Y-%m-%d:%H:%M:%S`
 OUTFILE=${DATE}$RANDOM.pdf
 
 echo ${OUTFILE}
-
-exit
 
 echo "Temporary files kept in: ${TMPDIR}"
 
